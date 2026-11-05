@@ -22,7 +22,7 @@ You are **not** changing the app code. The Express API below is here so you have
 
 - `package.json` — scripts for `dev`, `test`, and `lint`
 - `server.js` — the entry point; starts the API
-- `routes/` — `users.js` and `health.js`, one file per resource
+- `routes/` — `users.js`, `health.js` and `docs.js`, one file per resource (`GET /docs` lists every endpoint and its verb; `GET /docs/json` returns the same list as JSON)
 - `db/store.js` — a tiny in-memory data helper
 - `tests/users.test.js` — a sample test
 - `.env.example` — sample config; real secrets would live in `.env` (which is git-ignored)
